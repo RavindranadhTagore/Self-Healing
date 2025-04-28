@@ -1,0 +1,8 @@
+- name: Restart NGINX Service on Failure
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Restart NGINX
+      service:
+        name: nginx
+        state: restarted
