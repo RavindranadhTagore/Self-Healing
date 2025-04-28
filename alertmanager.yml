@@ -4,7 +4,7 @@ global:
 receivers:
   - name: 'ansible-receiver'
     webhook_configs:
-      - url: 'http://localhost:5001/alert' # (Webhook server URL)
+      - url: 'http://127.0.0.1:5001/alert' # (Webhook server URL)
 
 route:
   receiver: 'ansible-receiver'
