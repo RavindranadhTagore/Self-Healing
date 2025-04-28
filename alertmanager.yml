@@ -1,0 +1,10 @@
+global:
+  resolve_timeout: 5m
+
+receivers:
+  - name: 'ansible-receiver'
+    webhook_configs:
+      - url: 'http://localhost:5001/alert' # (Webhook server URL)
+
+route:
+  receiver: 'ansible-receiver'
