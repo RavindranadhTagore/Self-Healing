@@ -6,3 +6,7 @@
       service:
         name: nginx
         state: restarted
+        server {
+    listen 0.0.0.0:80;
+    server_name 54.166.172.182;
+    }
